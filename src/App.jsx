@@ -8,6 +8,7 @@ import './App.css'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('discover');
+  const [language, setLanguage] = useState('en'); // Default language
 
   const postData = [
     {
