@@ -2,7 +2,7 @@ import Post from './Post.jsx';
 const Feed = ({ posts }) => {
     return (
       <div className="p-4">
-      {posts.map((post, index) => {
+      {posts.map((post, index) => (
       <Post key={index}  
       user={post.user}
       handle={post.handle}
@@ -13,7 +13,7 @@ const Feed = ({ posts }) => {
       likes={post.likes}
       media={post.media}
       />
-      })}
+    ))}
       </div>
     );
   };
